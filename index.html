@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/index.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="title centered" id="title">BootCamp Suggestion Survey Form</h1>
+    <p class="description centered" id="description">Help me decide which bootcamp I should apply to!</p>
+  </header>
+
+  <div class="container">
+    <form id="survey-form" action="results.html" method="GET">
+      
+      <!-- contanct info -->
+      <div class="form-item">
+        <label id="name-label" for="">Name</label>
+        <input class="field" type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email</label>
+        <input class="field" type="email" name="email" id="email" placeholder="Enter your email" required>
+
+
+        <label id="number-label" for="age">Age<span class="help">(Optional)</span></label>
+        <input class="field" type="number" name="age" id="number" min="1" max="100" placeholder="Age">
+      </div>
+      <!-- contact select status -->
+      <div class="form-item">
+        <p>Your current status?</p>
+        <select class="field" name="status" id="dropdown" required>
+          <option value="student">Student</option>
+          <option value="graduate">Graduate</option>
+        </select>
+      </div>
+      <!-- contact learning prefrence -->
+      <div class="form-item">
+        <p>Which of the following do you recommend?</p>
+        <label class="radio-input">
+          <input type="radio" name="prefer" class="radio-input" value="self-taught">
+          Self Taught using online courses.
+        </label>
+        <label class="radio-input">
+            <input type="radio" name="prefer" class="radio-input" value="bootcamp">
+            Online/In person Bootcamp.
+        </label>
+        <label class="radio-input">
+          <input type="radio" name="prefer" class="radio-input" value="College">
+          College.
+        </label>
+      </div>
+      <!-- contact checklist -->
+      <p class="list-title">What languages do you know or currently learning?</p>  
+      <div class="form-item check-list">      
+        <div class="item-group">
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="html5">
+          HTML5</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="CSS3">
+          CSS3</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="compiler">
+          less/Sass compiler</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="JavaScript">
+          JavaScript</label>
+      </div>
+      <div class="item-group">
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="Java5">
+          Java</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="Node.js">
+          Node.js</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="Python">
+          Python</label>
+        <label class="check-txt">
+          <input type="checkbox" name="languages" value="PHP">
+          PHP</label>
+      </div>  
+      </div>
+
+      <div class="form-item text">
+        <p>Leave a detailed recommendation or any helpful links below!</p>
+        <textarea rows="5" name="comment" placeholder="Leave a comment"></textarea>
+      </div>
+
+      <div class="form-item btn-ct">
+        <button id="submit" class="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <scrip src="form.js" t></script>
+</body>
+</html>

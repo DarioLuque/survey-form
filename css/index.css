@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #003e49;
+  background-image: linear-gradient(125deg, rgba(80, 80, 80, 0.8), rgba(0, 0, 0, 0.8)), url(/images/bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+
+.header {
+  width: 80%;
+  margin: 3.25rem auto 0 auto;
+  padding: 1rem;
+  background: rgba(0, 34, 39, 0.705);
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin: 0 auto;
+  }
+}
+
+.header .title {
+  font-size: 2.3rem;
+  color: white;
+  margin: 0.25rem;
+}
+
+@media screen and (max-width: 480px) {
+  .header .title {
+    font-size: 1.2rem;
+  }
+}
+
+.header .description {
+  font-size: 1.3rem;
+  margin: 0.25rem;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .header .description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+  }
+}
+
+.header .centered {
+  text-align: center;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  background: rgba(0, 45, 56, 0.8);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 375px;
+  }
+}
+
+.container form {
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+  padding: 0.625rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container form {
+    width: 100%;
+  }
+}
+
+.container .form-item {
+  width: 100%;
+  color: white;
+}
+
+.container .form-item label,
+.container .form-item input,
+.container .form-item option {
+  font-size: inherit;
+}
+
+.container .form-item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem auto 0.1rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+  .container .form-item label {
+    font-size: 1rem;
+  }
+}
+
+.container .form-item .check-txt {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container .form-item .check-txt {
+    font-size: 0.8rem;
+  }
+}
+
+.container .form-item .field {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.container .form-item .help {
+  margin-left: 0.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .container .form-item .radio-input {
+    font-size: 1rem;
+  }
+}
+
+.container .list-title {
+  color: white;
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: rgba(17, 17, 17, 0.418);
+  height: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container .list-title {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+}
+
+.container .check-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #003e49;
+  border-radius: 0.625rem;
+}
+
+.container .item-group {
+  width: 25%;
+  margin: 0 auto 1rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .container .item-group {
+    width: 38%;
+  }
+}
+
+.container textarea {
+  resize: none;
+  width: 35rem;
+  height: 6.25rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container textarea {
+    resize: none;
+    width: 100%;
+  }
+}
+
+.container .text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .btn-ct {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .btn {
+  width: 82%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0 auto 1rem auto;
+}
+
+.container .btn:hover {
+  background: #959595;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
